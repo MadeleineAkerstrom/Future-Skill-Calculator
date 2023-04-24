@@ -1,0 +1,58 @@
+using API;
+using System;
+using System.Collections.Generic;
+
+namespace Solution
+{
+    public class Solution : ISolution
+    {
+        private APICaller api;
+
+        public Solution(APICaller api)
+        {
+            this.api = api;
+            Console.WriteLine("Press run code to see this in the console!");
+            // You can initiate and calculate things here
+        }
+
+        /**
+         * Return sum of a and b
+         */
+        public double Add(double a, double b)
+        {
+            double adding= a + b;
+            
+            
+            // Write your code here
+            return adding;
+        }
+
+        /**
+         * Return b subtracted from a
+         */
+        public double Subtract(double a, double b)
+        {
+            double sub= a-b;// Write your code here
+            return sub;
+        }
+
+        /**
+         * Return a multiplied by b
+         */
+        public double Multiply(double a, double b)
+        {
+           var multiplied= a* b;
+            // Write your code here
+            return multiplied;
+        }
+
+        /**
+         * Return a divided by b.
+         */
+        public double Divide(double a, double b)
+        {
+            var dividing = a/ b;// Write your code here
+            return dividing;
+        }
+    }
+}
